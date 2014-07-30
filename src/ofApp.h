@@ -4,6 +4,9 @@
 #include "ofxHTTP.h"
 #include "ofxUI.h"
 #include "ofxThreadedImageLoader.h"
+#include "ofxXmlSettings.h"
+#include "ofxJSONElement.h"
+#include "ofxHttpUtils.h"
 
 #define CAMIP "http://10.11.12.13"
 
@@ -33,19 +36,31 @@ class ofApp : public ofBaseApp{
         void onTaskProgress(const ofx::TaskProgressEventArgs& args);
         void onTaskData(const ofx::TaskDataEventArgs<ofx::HTTP::ClientResponseBufferEventArgs>& args);
     
+        void onGuiEvent(ofxUIEventArgs& e);
+    
     private:
-        ofxHTTP::DefaultClientTaskQueue httpQueue;
+        ofxHTTP::DefaultClientTaskQueue httpQueue, imgRefresh;
     
         ofxThreadedImageLoader imgLoader;
 
         void trigger();
         void saveStop();
         void download();
+        void configure();
+        void getCamSettings();
     
         ofImage preview, tempPreview;
     
-        Poco::UUID downloadID;
-
-
+        void setupUI();
+        ofxUISuperCanvas* ui;
+        ofxUISuperCanvas* camInfo;
     
+        Poco::UUID downloadID, statusID, infoID, configureID;
+
+        ofxHttpUtils httpUtils;
+    
+        //camera options
+        ofxJSONElement desiredSettings, actualSettings;
+        float desiredFramerate, desiredWidth, desiredHeight, desiredShutter;
+        float actualFramerate, actualWidth, actualHeight, actualShutter;
 };

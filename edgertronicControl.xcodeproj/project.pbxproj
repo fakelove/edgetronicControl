@@ -170,6 +170,11 @@
 		F0ABA886198706160077BA00 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ABA882198706160077BA00 /* tinyxmlerror.cpp */; };
 		F0ABA887198706160077BA00 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ABA883198706160077BA00 /* tinyxmlparser.cpp */; };
 		F0ABA88C198708940077BA00 /* ofxThreadedImageLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ABA88A198708940077BA00 /* ofxThreadedImageLoader.cpp */; };
+		F0AE392B19893E7100B3FF6A /* ofxJSONElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0AE391319893E7100B3FF6A /* ofxJSONElement.cpp */; };
+		F0AE392C19893E7100B3FF6A /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0AE392519893E7100B3FF6A /* json_reader.cpp */; };
+		F0AE392D19893E7100B3FF6A /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0AE392719893E7100B3FF6A /* json_value.cpp */; };
+		F0AE392E19893E7100B3FF6A /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0AE392919893E7100B3FF6A /* json_writer.cpp */; };
+		F0AE3937198965BB00B3FF6A /* ofxHttpUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0AE3935198965BB00B3FF6A /* ofxHttpUtils.cpp */; };
 		F1E8DE8734BA6F69A5112FA8 /* ofxUIBaseDraws.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28155024C27152A66926B553 /* ofxUIBaseDraws.cpp */; };
 		F392A99D83698FC099127880 /* ofxUIDropDownList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31517A9D3D67D9C054954DC5 /* ofxUIDropDownList.cpp */; };
 		F440B307990F8F5CE40B9111 /* ofxUIMovingGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7965EE214E4C332003852642 /* ofxUIMovingGraph.cpp */; };
@@ -573,6 +578,28 @@
 		F0ABA883198706160077BA00 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
 		F0ABA88A198708940077BA00 /* ofxThreadedImageLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxThreadedImageLoader.cpp; sourceTree = "<group>"; };
 		F0ABA88B198708940077BA00 /* ofxThreadedImageLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxThreadedImageLoader.h; sourceTree = "<group>"; };
+		F0AE391319893E7100B3FF6A /* ofxJSONElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxJSONElement.cpp; sourceTree = "<group>"; };
+		F0AE391419893E7100B3FF6A /* ofxJSONElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxJSONElement.h; sourceTree = "<group>"; };
+		F0AE391919893E7100B3FF6A /* autolink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		F0AE391A19893E7100B3FF6A /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		F0AE391B19893E7100B3FF6A /* features.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
+		F0AE391C19893E7100B3FF6A /* forwards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
+		F0AE391D19893E7100B3FF6A /* json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		F0AE391E19893E7100B3FF6A /* reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		F0AE391F19893E7100B3FF6A /* value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		F0AE392019893E7100B3FF6A /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		F0AE392219893E7100B3FF6A /* json_batchallocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json_batchallocator.h; sourceTree = "<group>"; };
+		F0AE392319893E7100B3FF6A /* json_internalarray.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = json_internalarray.inl; sourceTree = "<group>"; };
+		F0AE392419893E7100B3FF6A /* json_internalmap.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = json_internalmap.inl; sourceTree = "<group>"; };
+		F0AE392519893E7100B3FF6A /* json_reader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json_reader.cpp; sourceTree = "<group>"; };
+		F0AE392619893E7100B3FF6A /* json_tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json_tool.h; sourceTree = "<group>"; };
+		F0AE392719893E7100B3FF6A /* json_value.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json_value.cpp; sourceTree = "<group>"; };
+		F0AE392819893E7100B3FF6A /* json_valueiterator.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = json_valueiterator.inl; sourceTree = "<group>"; };
+		F0AE392919893E7100B3FF6A /* json_writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json_writer.cpp; sourceTree = "<group>"; };
+		F0AE392A19893E7100B3FF6A /* sconscript */ = {isa = PBXFileReference; lastKnownFileType = text; path = sconscript; sourceTree = "<group>"; };
+		F0AE3934198965BB00B3FF6A /* ofxHttpTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxHttpTypes.h; sourceTree = "<group>"; };
+		F0AE3935198965BB00B3FF6A /* ofxHttpUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxHttpUtils.cpp; sourceTree = "<group>"; };
+		F0AE3936198965BB00B3FF6A /* ofxHttpUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxHttpUtils.h; sourceTree = "<group>"; };
 		F26E25F3872C0799D6433B99 /* ofxUILabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUILabel.h; path = ../../../addons/ofxUI/src/ofxUILabel.h; sourceTree = SOURCE_ROOT; };
 		F4F5B6B8BA2BD52C646ED908 /* OscException.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscException.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscException.h; sourceTree = SOURCE_ROOT; };
 		F7FBC56859535E597B24BB91 /* NetworkingUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = NetworkingUtils.h; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/NetworkingUtils.h; sourceTree = SOURCE_ROOT; };
@@ -676,6 +703,8 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				F0AE3932198965BB00B3FF6A /* ofxHttpUtils */,
+				F0AE391119893E7100B3FF6A /* ofxJSON */,
 				F0ABA888198708940077BA00 /* ofxThreadedImageLoader */,
 				F0ABA87B198706160077BA00 /* ofxXmlSettings */,
 				F0ABA8111987054A0077BA00 /* ofxIO */,
@@ -1482,6 +1511,101 @@
 			path = ../../../addons/ofxThreadedImageLoader/src;
 			sourceTree = "<group>";
 		};
+		F0AE391119893E7100B3FF6A /* ofxJSON */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE391219893E7100B3FF6A /* src */,
+				F0AE391519893E7100B3FF6A /* libs */,
+			);
+			name = ofxJSON;
+			sourceTree = "<group>";
+		};
+		F0AE391219893E7100B3FF6A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE391319893E7100B3FF6A /* ofxJSONElement.cpp */,
+				F0AE391419893E7100B3FF6A /* ofxJSONElement.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxJSON/src;
+			sourceTree = "<group>";
+		};
+		F0AE391519893E7100B3FF6A /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE391619893E7100B3FF6A /* jsoncpp */,
+			);
+			name = libs;
+			path = ../../../addons/ofxJSON/libs;
+			sourceTree = "<group>";
+		};
+		F0AE391619893E7100B3FF6A /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE391719893E7100B3FF6A /* include */,
+				F0AE392119893E7100B3FF6A /* src */,
+			);
+			path = jsoncpp;
+			sourceTree = "<group>";
+		};
+		F0AE391719893E7100B3FF6A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE391819893E7100B3FF6A /* json */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F0AE391819893E7100B3FF6A /* json */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE391919893E7100B3FF6A /* autolink.h */,
+				F0AE391A19893E7100B3FF6A /* config.h */,
+				F0AE391B19893E7100B3FF6A /* features.h */,
+				F0AE391C19893E7100B3FF6A /* forwards.h */,
+				F0AE391D19893E7100B3FF6A /* json.h */,
+				F0AE391E19893E7100B3FF6A /* reader.h */,
+				F0AE391F19893E7100B3FF6A /* value.h */,
+				F0AE392019893E7100B3FF6A /* writer.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		F0AE392119893E7100B3FF6A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE392219893E7100B3FF6A /* json_batchallocator.h */,
+				F0AE392319893E7100B3FF6A /* json_internalarray.inl */,
+				F0AE392419893E7100B3FF6A /* json_internalmap.inl */,
+				F0AE392519893E7100B3FF6A /* json_reader.cpp */,
+				F0AE392619893E7100B3FF6A /* json_tool.h */,
+				F0AE392719893E7100B3FF6A /* json_value.cpp */,
+				F0AE392819893E7100B3FF6A /* json_valueiterator.inl */,
+				F0AE392919893E7100B3FF6A /* json_writer.cpp */,
+				F0AE392A19893E7100B3FF6A /* sconscript */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F0AE3932198965BB00B3FF6A /* ofxHttpUtils */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE3933198965BB00B3FF6A /* src */,
+			);
+			name = ofxHttpUtils;
+			sourceTree = "<group>";
+		};
+		F0AE3933198965BB00B3FF6A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE3934198965BB00B3FF6A /* ofxHttpTypes.h */,
+				F0AE3935198965BB00B3FF6A /* ofxHttpUtils.cpp */,
+				F0AE3936198965BB00B3FF6A /* ofxHttpUtils.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxHttpUtils/src;
+			sourceTree = "<group>";
+		};
 		FF8CDF57858E9B94E3237115 /* ip */ = {
 			isa = PBXGroup;
 			children = (
@@ -1639,6 +1763,7 @@
 				F0ABA8041987049D0077BA00 /* MediaTypeMap.cpp in Sources */,
 				F0ABA7C71986FFE80077BA00 /* CookieUtils.cpp in Sources */,
 				F0ABA7D31986FFE80077BA00 /* DefaultSessionProvider.cpp in Sources */,
+				F0AE392D19893E7100B3FF6A /* json_value.cpp in Sources */,
 				F0ABA8641987054A0077BA00 /* ByteBufferReader.cpp in Sources */,
 				F1E8DE8734BA6F69A5112FA8 /* ofxUIBaseDraws.cpp in Sources */,
 				F0ABA8671987054A0077BA00 /* COBSEncoding.cpp in Sources */,
@@ -1646,6 +1771,7 @@
 				F0ABA810198704B90077BA00 /* TaskQueueEvents.cpp in Sources */,
 				C381F2B7CFD84C0E540EB4BC /* ofxUIBiLabelSlider.cpp in Sources */,
 				F0ABA86E1987054A0077BA00 /* FileExtensionFilter.cpp in Sources */,
+				F0AE3937198965BB00B3FF6A /* ofxHttpUtils.cpp in Sources */,
 				F0ABA7C01986FFE80077BA00 /* BasicWebSocketServer.cpp in Sources */,
 				7D393646FB859A930EF58917 /* ofxUIButton.cpp in Sources */,
 				F0ABA7CE1986FFE80077BA00 /* DefaultCookieProcessor.cpp in Sources */,
@@ -1656,6 +1782,7 @@
 				F0ABA7D11986FFE80077BA00 /* DefaultRequestStreamFilter.cpp in Sources */,
 				F0ABA8651987054A0077BA00 /* ByteBufferUtils.cpp in Sources */,
 				DF0C851B244C4C867CEA8806 /* ofxUICircleSlider.cpp in Sources */,
+				F0AE392E19893E7100B3FF6A /* json_writer.cpp in Sources */,
 				F0ABA7CC1986FFE80077BA00 /* DefaultClientTask.cpp in Sources */,
 				9BE4AE0AA2B8C436BDFE9D4D /* ofxUIDragableLabelButton.cpp in Sources */,
 				F0ABA7E01986FFE80077BA00 /* PostRoute.cpp in Sources */,
@@ -1664,6 +1791,7 @@
 				7252706DA14C1BE63950ADDA /* ofxUIFPS.cpp in Sources */,
 				22030CBDCC25D815E7ED6757 /* ofxUIFPSSlider.cpp in Sources */,
 				F0ABA8711987054A0077BA00 /* LinkFilter.cpp in Sources */,
+				F0AE392B19893E7100B3FF6A /* ofxJSONElement.cpp in Sources */,
 				F0ABA86A1987054A0077BA00 /* DirectoryFilter.cpp in Sources */,
 				F0ABA7D41986FFE80077BA00 /* FileSystemRoute.cpp in Sources */,
 				F0ABA7EA1986FFE80077BA00 /* SessionSettings.cpp in Sources */,
@@ -1703,6 +1831,7 @@
 				F0ABA7C61986FFE80077BA00 /* CookieStore.cpp in Sources */,
 				740A58CBFDFE578C83A349AF /* ofxUISlider.cpp in Sources */,
 				F0ABA8661987054A0077BA00 /* ByteBufferWriter.cpp in Sources */,
+				F0AE392C19893E7100B3FF6A /* json_reader.cpp in Sources */,
 				F0ABA7C81986FFE80077BA00 /* Credentials.cpp in Sources */,
 				ADE7C2AFC51E3F7E5E389026 /* ofxUISortableList.cpp in Sources */,
 				BFEFCE32DAFE10A8EB519F6C /* ofxUISpacer.cpp in Sources */,
@@ -1922,7 +2051,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
-				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxMediaType/libs/ofxMediaType/include/ ../../../addons/ofxIO/libs/alphanum/include/ ../../../addons/ofxIO/libs/ofxIO/include/ ../../../addons/ofxHTTP/libs/ofxHTTP/include/";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxMediaType/libs/ofxMediaType/include/ ../../../addons/ofxIO/libs/alphanum/include/ ../../../addons/ofxIO/libs/ofxIO/include/ ../../../addons/ofxJSON/libs/jsoncpp/include/ ../../../addons/ofxHTTP/libs/ofxHTTP/include/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2008,7 +2137,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxMediaType/libs/ofxMediaType/include/ ../../../addons/ofxIO/libs/alphanum/include/ ../../../addons/ofxIO/libs/ofxIO/include/ ../../../addons/ofxHTTP/libs/ofxHTTP/include/";
+				USER_HEADER_SEARCH_PATHS = "../../../addons/ofxMediaType/libs/ofxMediaType/include/ ../../../addons/ofxIO/libs/alphanum/include/ ../../../addons/ofxIO/libs/ofxIO/include/ ../../../addons/ofxJSON/libs/jsoncpp/include/ ../../../addons/ofxHTTP/libs/ofxHTTP/include/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
