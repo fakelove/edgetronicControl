@@ -66,7 +66,7 @@ void ofApp::download(){
 
 void ofApp::configure(){
     string uri = CAMIP;
-    uri += "/configure_camera";
+    uri += "/configure_camera?run=1";
     
     Poco::Net::NameValueCollection nameVal;
     vector<string> members = desiredSettings.getMemberNames();
@@ -85,7 +85,7 @@ void ofApp::configure(){
 //    configureID = httpQueue.request(post);
     
     ofBuffer buf = desiredSettings.toStyledString();
-    httpUtils.postData(uri, buf );
+    httpUtils.postData(uri, buf , "application/json; charset=utf-8");
     
 }
 
@@ -205,6 +205,8 @@ void ofApp::setupUI(){
 
 void ofApp::onGuiEvent(ofxUIEventArgs& e){
     string name = e.getName();
+    int kind = e.getKind();
+    
     cout<<name<<endl;
     if (name == "Start") {
         trigger();
@@ -216,6 +218,10 @@ void ofApp::onGuiEvent(ofxUIEventArgs& e){
         configure();
     } else if (name=="Get Settings"){
         getCamSettings();
+    }
+    
+    if(kind == OFX_UI_WIDGET_SLIDER_H){
+        desiredSettings["requested_frame_rate"]= desiredFramerate;
     }
 }
 
