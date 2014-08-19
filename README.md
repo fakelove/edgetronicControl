@@ -1,6 +1,6 @@
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-[![vine]https://raw.githubusercontent.com/fakelove/edgetronicControl/master/bin/data/vine.png](https://vine.co/v/M3tdn2aLBYh)
+[[vine](https://raw.githubusercontent.com/fakelove/edgetronicControl/master/bin/data/vine.png)](https://vine.co/v/M3tdn2aLBYh)
 
 #### edgetronicControl from  Fake Love R <3 D
 
