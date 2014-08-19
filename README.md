@@ -6,14 +6,17 @@ Code by Jesse Garrison and Dan Moore
 
 This app interfaces with the [Edgertronic High Speed Camera](http://edgertronic.com/).
 
-It currently Triggers a high speed capture and Downloads the capture for Preview.
+The app can trigger a high speed capture and downloads the capture for preview.
 
-uses:
-   ofxHTTP
-   ofxMediaTypes
-   ofxSSLManager
-   ofxIO
-   ofxJSON
-   ofxTaskQueue
+dependencies:
+   - [ofxHTTP](https://github.com/bakercp/ofxHTTP)
+   - [ofxMediaTypes](https://github.com/bakercp/ofxMediaTypes)
+   - [ofxSSLManager](https://github.com/bakercp/ofxSSLManager)
+   - [ofxIO](https://github.com/bakercp/ofxIO)
+   - [ofxJSON](https://github.com/bakercp/ofxJSON)
+   - [ofxTaskQueue](https://github.com/bakercp/ofxTaskQueue)
 
-all by the amazing @bakercp
+all by the amazing @[bakercp](https://github.com/bakercp/)
+
+<html>
+<iframe class="vine-embed" src="https://vine.co/v/M3tdn2aLBYh/embed/simple" width="600" height="600" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script></html>
