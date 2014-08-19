@@ -18,5 +18,5 @@ dependencies:
 
 all by the amazing @[bakercp](https://github.com/bakercp/)
 
-
-<iframe class="vine-embed" src="https://vine.co/v/M3tdn2aLBYh/embed/simple" width="600" height="600" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+<html>
+<iframe class="vine-embed" src="https://vine.co/v/M3tdn2aLBYh/embed/simple" width="600" height="600" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script></html>
