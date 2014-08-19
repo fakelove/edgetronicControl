@@ -1,6 +1,8 @@
 This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
-###edgetronicControl from  Fake Love R&D
+[![https://raw.githubusercontent.com/fakelove/edgetronicControl/master/bin/data/vine.png]](https://vine.co/v/M3tdn2aLBYh)
+
+#### edgetronicControl from  Fake Love R <3 D
 
 Code by Jesse Garrison and Dan Moore
 
@@ -18,5 +20,4 @@ dependencies:
 
 all by the amazing @[bakercp](https://github.com/bakercp/)
 
-<html>
-<iframe class="vine-embed" src="https://vine.co/v/M3tdn2aLBYh/embed/simple" width="600" height="600" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script></html>
+
