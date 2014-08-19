@@ -4,7 +4,7 @@ This work is licensed under the Creative Commons Attribution-NonCommercial-Share
 
 Code by Jesse Garrison and Dan Moore
 
-This app interfaces with the Edgertronic High Speed Camera.
+This app interfaces with the [Edgertronic High Speed Camera](http://edgertronic.com/).
 
 It currently Triggers a high speed capture and Downloads the capture for Preview.
 
