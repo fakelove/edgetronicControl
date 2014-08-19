@@ -5,33 +5,129 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>928F816D-F5D0-418C-AE67-027B89E06231</string>
+	<string>25BBB009-1B36-4704-A567-C2D88FADDAC5</string>
 	<key>IDESourceControlProjectName</key>
 	<string>edgertronicControl</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>02A30FE2-426C-40EF-8F8E-7A74D93176E9</key>
+		<string>https://github.com/bakercp/ofxSSLManager.git</string>
 		<key>3CCB2565-BD4E-45CA-B538-6CAAB1A09166</key>
 		<string>https://github.com/rezaali/ofxUI.git</string>
-		<key>EC8EBBBA-D3A3-478C-A3DA-B7CF3A915DEC</key>
-		<string>https://github.com/openframeworks/openFrameworks.git</string>
+		<key>6A957951-4BCD-41EC-9747-B0011B0AC5C4</key>
+		<string>https://github.com/openFrameworks/openFrameworks.git</string>
+		<key>6CBD7043-2627-4470-9E2E-28830D6008D9</key>
+		<string>https://github.com/bakercp/ofxHTTP.git</string>
+		<key>6D9F968A-4848-492E-B8BB-382DA3D36610</key>
+		<string>https://github.com/bakercp/ofxIO.git</string>
+		<key>6F37051F-AF63-4AA1-8C57-DD956D4E87AD</key>
+		<string>https://github.com/bakercp/ofxTaskQueue.git</string>
+		<key>CCCFD5FB-D4C4-4575-A189-3B753A28A7BE</key>
+		<string>https://github.com/arturoc/ofxHttpUtils</string>
+		<key>D282CAA4-B456-47BD-A1E6-27DD8B8F003F</key>
+		<string>https://github.com/bakercp/ofxMediaType.git</string>
+		<key>EA52B508-AFA4-4924-A2CA-33D07B59DB15</key>
+		<string>https://github.com/bakercp/ofxJSON.git</string>
+		<key>EF5FF0E6-0FDF-4CA9-B40B-A05BE967EB75</key>
+		<string>https://github.com/fakelove/edgetronicControl.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>apps/myApps/edgertronicControl/edgertronicControl.xcodeproj/project.xcworkspace</string>
+	<string>apps/FakeLoveApps/edgetronicControl/edgertronicControl.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>02A30FE2-426C-40EF-8F8E-7A74D93176E9</key>
+		<string>../../../../../addons/ofxSSLManager</string>
 		<key>3CCB2565-BD4E-45CA-B538-6CAAB1A09166</key>
 		<string>../../../../../addons/ofxUI</string>
-		<key>EC8EBBBA-D3A3-478C-A3DA-B7CF3A915DEC</key>
+		<key>6A957951-4BCD-41EC-9747-B0011B0AC5C4</key>
 		<string>../../../../..</string>
+		<key>6CBD7043-2627-4470-9E2E-28830D6008D9</key>
+		<string>../../../../../addons/ofxHTTP</string>
+		<key>6D9F968A-4848-492E-B8BB-382DA3D36610</key>
+		<string>../../../../../addons/ofxIO</string>
+		<key>6F37051F-AF63-4AA1-8C57-DD956D4E87AD</key>
+		<string>../../../../../addons/ofxTaskQueue</string>
+		<key>CCCFD5FB-D4C4-4575-A189-3B753A28A7BE</key>
+		<string>../../../../../addons/ofxHttpUtils</string>
+		<key>D282CAA4-B456-47BD-A1E6-27DD8B8F003F</key>
+		<string>../../../../../addons/ofxMediaType</string>
+		<key>EA52B508-AFA4-4924-A2CA-33D07B59DB15</key>
+		<string>../../../../../addons/ofxJSON</string>
+		<key>EF5FF0E6-0FDF-4CA9-B40B-A05BE967EB75</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/openframeworks/openFrameworks.git</string>
+	<string>https://github.com/fakelove/edgetronicControl.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EC8EBBBA-D3A3-478C-A3DA-B7CF3A915DEC</string>
+	<string>6A957951-4BCD-41EC-9747-B0011B0AC5C4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EF5FF0E6-0FDF-4CA9-B40B-A05BE967EB75</string>
+			<key>IDESourceControlWCCName</key>
+			<string>edgetronicControl</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6CBD7043-2627-4470-9E2E-28830D6008D9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxHTTP</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CCCFD5FB-D4C4-4575-A189-3B753A28A7BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxHttpUtils</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6D9F968A-4848-492E-B8BB-382DA3D36610</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxIO</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EA52B508-AFA4-4924-A2CA-33D07B59DB15</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxJSON</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D282CAA4-B456-47BD-A1E6-27DD8B8F003F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxMediaType</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>02A30FE2-426C-40EF-8F8E-7A74D93176E9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxSSLManager</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6F37051F-AF63-4AA1-8C57-DD956D4E87AD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxTaskQueue</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
@@ -44,7 +140,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EC8EBBBA-D3A3-478C-A3DA-B7CF3A915DEC</string>
+			<string>6A957951-4BCD-41EC-9747-B0011B0AC5C4</string>
 			<key>IDESourceControlWCCName</key>
 			<string>openFrameworks</string>
 		</dict>
