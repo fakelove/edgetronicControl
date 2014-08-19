@@ -1,0 +1,20 @@
+# OSX
+.DS_Store
+*.swp
+*~.nib
+# Thumbnails
+._*
+
+[Bb]uild/
+[Oo]bj/
+*.o
+[Dd]ebug*/
+[Rr]elease*/
+*.mode*
+*.app/
+*.pyc
+.svn/
+*.log
+*.cpp.eep
+*.cpp.elf
+*.cpp.hex
