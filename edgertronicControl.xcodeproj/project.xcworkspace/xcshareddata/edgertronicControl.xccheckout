@@ -5,17 +5,17 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>25BBB009-1B36-4704-A567-C2D88FADDAC5</string>
+	<string>A4F98954-39D3-438D-A2CF-A350D5C73BF1</string>
 	<key>IDESourceControlProjectName</key>
 	<string>edgertronicControl</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>02A30FE2-426C-40EF-8F8E-7A74D93176E9</key>
 		<string>https://github.com/bakercp/ofxSSLManager.git</string>
+		<key>27DB3157-5AD5-4B0F-83B0-B0B6D8B83652</key>
+		<string>https://github.com/openframeworks/openFrameworks.git</string>
 		<key>3CCB2565-BD4E-45CA-B538-6CAAB1A09166</key>
 		<string>https://github.com/rezaali/ofxUI.git</string>
-		<key>6A957951-4BCD-41EC-9747-B0011B0AC5C4</key>
-		<string>https://github.com/openFrameworks/openFrameworks.git</string>
 		<key>6CBD7043-2627-4470-9E2E-28830D6008D9</key>
 		<string>https://github.com/bakercp/ofxHTTP.git</string>
 		<key>6D9F968A-4848-492E-B8BB-382DA3D36610</key>
@@ -32,15 +32,15 @@
 		<string>https://github.com/fakelove/edgetronicControl.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>apps/FakeLoveApps/edgetronicControl/edgertronicControl.xcodeproj/project.xcworkspace</string>
+	<string>apps/FFFFFFFFAT/edgetronicControl/edgertronicControl.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>02A30FE2-426C-40EF-8F8E-7A74D93176E9</key>
 		<string>../../../../../addons/ofxSSLManager</string>
+		<key>27DB3157-5AD5-4B0F-83B0-B0B6D8B83652</key>
+		<string>../../../../..</string>
 		<key>3CCB2565-BD4E-45CA-B538-6CAAB1A09166</key>
 		<string>../../../../../addons/ofxUI</string>
-		<key>6A957951-4BCD-41EC-9747-B0011B0AC5C4</key>
-		<string>../../../../..</string>
 		<key>6CBD7043-2627-4470-9E2E-28830D6008D9</key>
 		<string>../../../../../addons/ofxHTTP</string>
 		<key>6D9F968A-4848-492E-B8BB-382DA3D36610</key>
@@ -57,11 +57,11 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/fakelove/edgetronicControl.git</string>
+	<string>https://github.com/openframeworks/openFrameworks.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6A957951-4BCD-41EC-9747-B0011B0AC5C4</string>
+	<string>27DB3157-5AD5-4B0F-83B0-B0B6D8B83652</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -140,7 +140,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6A957951-4BCD-41EC-9747-B0011B0AC5C4</string>
+			<string>27DB3157-5AD5-4B0F-83B0-B0B6D8B83652</string>
 			<key>IDESourceControlWCCName</key>
 			<string>openFrameworks</string>
 		</dict>
