@@ -9,11 +9,11 @@ This app interfaces with the [Edgertronic High Speed Camera](http://edgertronic.
 The app can trigger a high speed capture and downloads the capture for preview.
 
 dependencies:
-   [ofxHTTP](https://github.com/bakercp/ofxHTTP)
-   [ofxMediaTypes](https://github.com/bakercp/ofxMediaTypes)
-   [ofxSSLManager](https://github.com/bakercp/ofxSSLManager)
-   [ofxIO](https://github.com/bakercp/ofxIO)
-   [ofxJSON](https://github.com/bakercp/ofxJSON)
-   [ofxTaskQueue](https://github.com/bakercp/ofxTaskQueue)
+   - [ofxHTTP](https://github.com/bakercp/ofxHTTP)
+   - [ofxMediaTypes](https://github.com/bakercp/ofxMediaTypes)
+   - [ofxSSLManager](https://github.com/bakercp/ofxSSLManager)
+   - [ofxIO](https://github.com/bakercp/ofxIO)
+   - [ofxJSON](https://github.com/bakercp/ofxJSON)
+   - [ofxTaskQueue](https://github.com/bakercp/ofxTaskQueue)
 
 all by the amazing @[bakercp](https://github.com/bakercp/)
