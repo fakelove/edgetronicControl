@@ -16,7 +16,7 @@ StatusTask::~StatusTask(){
 }
 
 void StatusTask::setup(){
-    statusRefresh.registerTaskEvents(this);
+    statusRefresh.registerAllEvents(this);
     ofAddListener(ofEvents().update, this, &StatusTask::update);
     statusURL = "http://10.11.12.13/get_status";
     Poco::UUID uuid = statusRefresh.get(statusURL);
@@ -68,7 +68,7 @@ void StatusTask::exit(){
     ofRemoveListener(ofEvents().update, this, &StatusTask::update);
 }
 
-void StatusTask::onTaskQueued(const ofx::TaskQueuedEventArgs& args)
+void StatusTask::onTaskQueued(const ofx::TaskQueueEventArgs& args)
 {
     // Make a record of the task so we can keep track of its progress.
     Status newQuery;
@@ -78,18 +78,18 @@ void StatusTask::onTaskQueued(const ofx::TaskQueuedEventArgs& args)
 }
 
 
-void StatusTask::onTaskStarted(const ofx::TaskStartedEventArgs& args)
+void StatusTask::onTaskStarted(const ofx::TaskQueueEventArgs& args)
 {
 }
 
 
-void StatusTask::onTaskCancelled(const ofx::TaskCancelledEventArgs& args)
+void StatusTask::onTaskCancelled(const ofx::TaskQueueEventArgs& args)
 {
     
 }
 
 
-void StatusTask::onTaskFinished(const ofx::TaskFinishedEventArgs& args)
+void StatusTask::onTaskFinished(const ofx::TaskQueueEventArgs& args)
 {
     if (statusMap[args.getTaskId()].state == Status::PENDING)
     {
@@ -112,7 +112,7 @@ void StatusTask::onTaskProgress(const ofx::TaskProgressEventArgs& args)
 }
 
 
-void StatusTask::onTaskData(const ofx::TaskDataEventArgs<ofx::HTTP::ClientResponseBufferEventArgs>& args)
+void StatusTask::onClientBuffer(const ofx::HTTP::ClientBufferEventArgs& args)
 {
     const ofx::IO::ByteBuffer& buffer = args.getData().getByteBuffer();
     try

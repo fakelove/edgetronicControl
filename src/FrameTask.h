@@ -44,17 +44,17 @@ public:
     void exit();
     bool isFrameNew();
     ofTexture* getCurrentFrame();
-    void onTaskQueued(const ofx::TaskQueuedEventArgs& args);
-    void onTaskStarted(const ofx::TaskStartedEventArgs& args);
-    void onTaskCancelled(const ofx::TaskCancelledEventArgs& args);
-    void onTaskFinished(const ofx::TaskFinishedEventArgs& args);
+    void onTaskQueued(const ofx::TaskQueueEventArgs& args);
+    void onTaskStarted(const ofx::TaskQueueEventArgs& args);
+    void onTaskCancelled(const ofx::TaskQueueEventArgs& args);
+    void onTaskFinished(const ofx::TaskQueueEventArgs& args);
     void onTaskFailed(const ofx::TaskFailedEventArgs& args);
     void onTaskProgress(const ofx::TaskProgressEventArgs& args);
-    void onTaskData(const ofx::TaskDataEventArgs<ofx::HTTP::ClientResponseBufferEventArgs>& args);
+    void onClientBuffer(const ofx::HTTP::ClientBufferEventArgs& args);
     typedef std::map<Poco::UUID, Frame> FrameMap;
 private:
     FrameMap frames;
-    ofxHTTP::DefaultClientTaskQueue imgRefresh;
+     ofx::HTTP::DefaultClientTaskQueue imgRefresh;
     Synchronized<ofImage> imgBuffer;
     ofImage preview;
     string previewURL;

@@ -17,7 +17,7 @@ FrameTask::~FrameTask(){
 
 void FrameTask::setup(){
     imgBuffer.setup(ofImage());
-    imgRefresh.registerTaskEvents(this);
+    imgRefresh.registerAllEvents(this);
     ofAddListener(ofEvents().update, this, &FrameTask::update);
     previewURL = "http://10.11.12.13/static/images/image.jpg";
     Poco::UUID uuid = imgRefresh.get(previewURL);
@@ -58,7 +58,7 @@ void FrameTask::exit(){
     ofRemoveListener(ofEvents().update, this, &FrameTask::update);
 }
 
-void FrameTask::onTaskQueued(const ofx::TaskQueuedEventArgs& args)
+void FrameTask::onTaskQueued(const ofx::TaskQueueEventArgs& args)
 {
     // Make a record of the task so we can keep track of its progress.
     Frame newFrame;
@@ -68,18 +68,18 @@ void FrameTask::onTaskQueued(const ofx::TaskQueuedEventArgs& args)
 }
 
 
-void FrameTask::onTaskStarted(const ofx::TaskStartedEventArgs& args)
+void FrameTask::onTaskStarted(const ofx::TaskQueueEventArgs& args)
 {
 }
 
 
-void FrameTask::onTaskCancelled(const ofx::TaskCancelledEventArgs& args)
+void FrameTask::onTaskCancelled(const ofx::TaskQueueEventArgs& args)
 {
     
 }
 
 
-void FrameTask::onTaskFinished(const ofx::TaskFinishedEventArgs& args)
+void FrameTask::onTaskFinished(const ofx::TaskQueueEventArgs& args)
 {
     if (frames[args.getTaskId()].state == Frame::PENDING)
     {
@@ -102,7 +102,7 @@ void FrameTask::onTaskProgress(const ofx::TaskProgressEventArgs& args)
 }
 
 
-void FrameTask::onTaskData(const ofx::TaskDataEventArgs<ofx::HTTP::ClientResponseBufferEventArgs>& args)
+void FrameTask::onClientBuffer(const ofx::HTTP::ClientBufferEventArgs& args)
 {
     const ofx::IO::ByteBuffer& buffer = args.getData().getByteBuffer();
     try

@@ -17,7 +17,7 @@ DownloaderTask::~DownloaderTask(){
 
 void DownloaderTask::setup(){
     buffers.setup(ofBuffer());
-    captureQueue.registerTaskEvents(this);
+    captureQueue.registerAllEvents(this);
     ofAddListener(ofEvents().update, this, &DownloaderTask::update);
     downloadURL = "http://10.11.12.13";
     progress = 0;
@@ -47,13 +47,16 @@ void DownloaderTask::triggerDownload(){
     ofHttpResponse response = ofLoadURL("http://10.11.12.13/last_saved_filename");
     ofLog(OF_LOG_NOTICE)<<response.data<<endl;
     
-    lastFileName = ofToString(response.data);
-    if(ofIsStringInString(lastFileName, "\"")){
-        ofStringReplace(lastFileName, "\"", "");
+    string newFile = ofToString(response.data);
+    if(ofIsStringInString(newFile, "\"")){
+        ofStringReplace(newFile, "\"", "");
     }
-    ofLog(OF_LOG_NOTICE)<<"Download url "<<downloadURL+"/static"+lastFileName<<endl;
-    progress = 0;
-    Poco::UUID uuid = captureQueue.get(downloadURL+"/static"+lastFileName);
+    if(newFile != lastFileName){
+        lastFileName = newFile;
+        ofLog(OF_LOG_NOTICE)<<"Download url "<<downloadURL+"/static"+lastFileName<<endl;
+        progress = 0;
+        Poco::UUID uuid = captureQueue.get(downloadURL+"/static"+lastFileName);
+    }
     
 }
 
@@ -62,7 +65,7 @@ void DownloaderTask::exit(){
     ofRemoveListener(ofEvents().update, this, &DownloaderTask::update);
 }
 
-void DownloaderTask::onTaskQueued(const ofx::TaskQueuedEventArgs& args)
+void DownloaderTask::onTaskQueued(const ofx::TaskQueueEventArgs& args)
 {
     // Make a record of the task so we can keep track of its progress.
     Capture newFrame;
@@ -72,19 +75,19 @@ void DownloaderTask::onTaskQueued(const ofx::TaskQueuedEventArgs& args)
 }
 
 
-void DownloaderTask::onTaskStarted(const ofx::TaskStartedEventArgs& args)
+void DownloaderTask::onTaskStarted(const ofx::TaskQueueEventArgs& args)
 {
     ofNotifyEvent(downloadStarted, progress, this);
 }
 
 
-void DownloaderTask::onTaskCancelled(const ofx::TaskCancelledEventArgs& args)
+void DownloaderTask::onTaskCancelled(const ofx::TaskQueueEventArgs& args)
 {
     
 }
 
 
-void DownloaderTask::onTaskFinished(const ofx::TaskFinishedEventArgs& args)
+void DownloaderTask::onTaskFinished(const ofx::TaskQueueEventArgs& args)
 {
     if (captures[args.getTaskId()].state == Capture::PENDING)
     {
@@ -116,7 +119,7 @@ void DownloaderTask::onTaskProgress(const ofx::TaskProgressEventArgs& args)
 }
 
 
-void DownloaderTask::onTaskData(const ofx::TaskDataEventArgs<ofx::HTTP::ClientResponseBufferEventArgs>& args)
+void DownloaderTask::onClientBuffer(const ofx::HTTP::ClientBufferEventArgs& args)
 {
     const ofx::IO::ByteBuffer& buffer = args.getData().getByteBuffer();
     try
